@@ -1,0 +1,25 @@
+.hero {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: url(../assets/background.png);
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100%);
+	}
+
+	&__title {
+		margin-top: rem(36);
+		font-family: 'Exo20';
+		font-size: rem(36);
+		line-height: 44px;
+		text-align: center;
+		color: #FFF;
+		text-shadow: 0px 1px 1px #000;
+	}
+}
