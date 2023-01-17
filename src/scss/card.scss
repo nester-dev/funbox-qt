@@ -1,0 +1,78 @@
+.card {
+	width: rem(320);
+	height: rem(480);
+	border-radius: 12px;
+	background-color: $mainColor;
+	clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+	cursor: pointer;
+
+	&__wrapper {
+		position: relative;
+		top: 4px;
+		left: 4px;
+		width: rem(312);
+		height: rem(472);
+		padding: rem(21) rem(16) 1rem rem(51);
+		border-radius: 12px;
+		background: #F2F2F2;
+		clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+	}
+
+	&__subtitle {
+		margin-bottom: 5px;
+		font-weight: 400;
+		line-height: 19px;
+		color: #666666;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: rem(48);
+		line-height: 56px;
+
+		&-small {
+			font-size: rem(24);
+			line-height: 28px;
+		}
+	}
+
+	&__description {
+		margin-top: rem(15);
+		font-weight: 700;
+		font-size: rem(14);
+		line-height: 16px;
+		color: #666666;
+	}
+
+	&__image {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		border-radius: 12px;
+	}
+	
+	&__weight {
+		position: absolute;
+		right: 12px;
+		bottom: 12px;
+		width: 80px;
+		height: 80px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		padding: 20px 0 8px;
+		border-radius: 50%;
+		background: $mainColor;
+		font-weight: 400;
+		font-size: rem(42);
+		line-height: 22px;
+		text-align: center;
+		color: #FFF;
+
+		&-small {
+			font-size: rem(21);
+		}
+	}
+}

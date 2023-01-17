@@ -1,6 +1,10 @@
 @use 'sass:math';
 
+$mainColor: #1698D9;
+$pink: #E52E7A;
+
 @import 'fonts.scss';
 @import 'mixins.scss';
 @import 'null.scss';
 @import 'hero.scss';
+@import 'card.scss';
