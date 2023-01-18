@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Card from "./Card";
 
-function CardList(props) {
+function CardList() {
+  const [items, setItems] = useState(null);
+
+  useEffect(() => {
+    (async () => {
+      const response = await fetch("./data.json");
+
+      setItems(await response.json());
+    })();
+  }, []);
+
   return (
     <div className="hero__wrapper">
-      <Card />
-      <Card />
-      <Card />
+      {items && items.map((card) => <Card key={card.id} {...card} />)}
     </div>
   );
 }

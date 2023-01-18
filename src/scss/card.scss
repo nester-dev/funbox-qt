@@ -12,6 +12,37 @@
 		clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
 		cursor: pointer;
 
+		&-selected {
+			background-color: $bg-pink;
+	
+			.card__weight {
+				background: $pink;
+			}
+		}
+
+		&-disabled {
+			background-color: $bg-gray;
+			cursor: not-allowed;
+
+			.card {
+				
+				&__wrapper {
+					opacity: 0.5;
+				}
+
+				&__subtitle,
+				&__description,
+				&__wrapper {
+					color: $bg-gray;
+				}
+
+				&__weight {
+					background: $bg-gray;
+					color: #FFF;
+				}
+			}
+		}
+
 		@media (max-width: 768px) {
 			width: rem(290);
 			height: rem(450);
@@ -26,7 +57,7 @@
 		height: rem(472);
 		padding: rem(21) rem(16) 1rem rem(51);
 		border-radius: 12px;
-		background: #F2F2F2;
+		background: $gray;
 		clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
 
 		@media (max-width: 768px) {
@@ -40,6 +71,10 @@
 		font-weight: 400;
 		line-height: 19px;
 		color: #666666;
+
+		&-hover {
+			color: $hoverText-pink;
+		}
 	}
 
 	&__title {
@@ -100,6 +135,10 @@
 		line-height: 15px;
 		text-align: center;
 		color: #FFF;
+
+		&-disabled {
+			color: $yellow;
+		}
 	}
 
 	&__button {

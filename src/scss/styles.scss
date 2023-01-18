@@ -1,7 +1,12 @@
 @use 'sass:math';
 
 $mainColor: #1698D9;
-$pink: #E52E7A;
+$bg-pink: #D91667;
+$pink: #D91667;
+$bg-gray: #c9c9c9;
+$gray: #F2F2F2;
+$yellow: #FFFF66;
+$hoverText-pink: #E62E7A;
 
 @import 'fonts.scss';
 @import 'mixins.scss';
