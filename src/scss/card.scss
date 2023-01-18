@@ -1,10 +1,22 @@
 .card {
-	width: rem(320);
-	height: rem(480);
-	border-radius: 12px;
-	background-color: $mainColor;
-	clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
-	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	z-index: 10;
+
+	&__top {
+		width: rem(320);
+		height: rem(480);
+		border-radius: 12px;
+		background-color: $mainColor;
+		clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+		cursor: pointer;
+
+		@media (max-width: 768px) {
+			width: rem(290);
+			height: rem(450);
+		}
+	}
 
 	&__wrapper {
 		position: relative;
@@ -16,6 +28,11 @@
 		border-radius: 12px;
 		background: #F2F2F2;
 		clip-path: polygon(16% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+
+		@media (max-width: 768px) {
+			width: rem(282);
+			height: rem(442);
+		}
 	}
 
 	&__subtitle {
@@ -48,6 +65,7 @@
 		position: absolute;
 		left: 0;
 		bottom: 0;
+		width: 100%;
 		border-radius: 12px;
 	}
 	
@@ -73,6 +91,23 @@
 
 		&-small {
 			font-size: rem(21);
+		}
+	}
+
+	&__bottom {
+		font-weight: 400;
+		font-size: rem(13);
+		line-height: 15px;
+		text-align: center;
+		color: #FFF;
+	}
+
+	&__button {
+		color: $mainColor;
+		
+
+		&-dashed {
+			border-bottom: 1px dashed $mainColor;
 		}
 	}
 }

@@ -2,7 +2,12 @@
 	position: relative;
 	width: 100vw;
 	height: 100vh;
-	background: url(../assets/background.png);
+	padding: 36px 5px;
+	background: center / cover no-repeat url(../assets/background.png);
+
+	@media (max-width: 990px ) {
+		height: 100%;
+	}
 
 	&__overlay {
 		position: absolute;
@@ -14,12 +19,20 @@
 	}
 
 	&__title {
-		margin-top: rem(36);
 		font-family: 'Exo20';
 		font-size: rem(36);
 		line-height: 44px;
 		text-align: center;
 		color: #FFF;
 		text-shadow: 0px 1px 1px #000;
+	}
+
+	&__wrapper {
+		display: flex;
+		width: 100%;
+		margin-top: rem(25);
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		gap: 30px 10px;
 	}
 }

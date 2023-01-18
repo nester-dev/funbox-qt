@@ -1,13 +1,12 @@
 import React from "react";
-import Card from "./components/Card";
+import CardList from "./components/CardList";
 
 function App() {
   return (
     <main className="hero">
-      <div className="hero__overlay">
-        <h1 className="hero__title">Ты сегодня покормил кота?</h1>
-        <Card />
-      </div>
+      <div className="hero__overlay"></div>
+      <h1 className="hero__title">Ты сегодня покормил кота?</h1>
+      <CardList />
     </main>
   );
 }
